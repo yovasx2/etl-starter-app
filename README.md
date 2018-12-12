@@ -10,5 +10,5 @@ Rails application with just enough code to start AELOGICA's [ETL exercise](https
 ### Instructions
 
 1. Clone from https://git.appexpress.io/open-source/etl-starter-app.git
-1. Install gems
-1. Run application
+2. Install gems
+3. Run application

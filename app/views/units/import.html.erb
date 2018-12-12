@@ -1,0 +1,11 @@
+<h1>Units#trigger</h1>
+<%= link_to 'List', units_index_path %>
+
+<%= form_tag('/units/parse', method: 'post') do %>
+  <%= label_tag(:q, 'Format:') %>
+  <%= radio_button_tag(:format, 'csv') %>
+  <%= label_tag(:format_csv, 'CSV') %>
+  <%= radio_button_tag(:format, 'json') %>
+  <%= label_tag(:format_json, 'JSON') %>
+  <%= submit_tag('Import') %>
+<% end %>

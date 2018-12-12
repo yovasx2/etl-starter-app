@@ -1,0 +1,35 @@
+<h1>Units#index</h1>
+
+<%= link_to 'Imports', units_import_path %>
+
+<table>
+  <th>
+    <td>
+      id
+    </td>
+  </th>
+  <th>
+    <td>
+      name
+    </td>
+  </th>
+  <th>
+    <td>
+      description
+    </td>
+  </th>
+  <th>
+    <td>
+      price
+    </td>
+  </th>
+
+  <% @units.each do |unit| %>
+  <tr>
+    <td><%= unit.id %></td>
+    <td><%= unit.name %></td>
+    <td><%= unit.description %></td>
+    <td><%= unit.price %></td>
+  </tr>
+  <% end %>
+</table>
